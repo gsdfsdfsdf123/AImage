@@ -1,0 +1,142 @@
+body {
+    background-color: #FAFAF7;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+p, h1, span {
+    margin: 0;
+    color: #28282B;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 16px;
+}
+
+.actions {
+    width: 800px;
+    height: 80px;
+    background-color: #F7F5F2;
+    border-radius: 32px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.actions:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.actions-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+#paste {
+    width: 55%;
+    height: 100%;
+    border: transparent;
+    background-color: unset;
+    outline: transparent;
+    font-family: 'Rubik Regular';
+    font-size: 24px;
+    border-radius: 32px 0px 0px 32px;
+    padding-left: 16px;
+}
+
+#paste:focus::placeholder {
+    color: transparent;
+}
+
+#browse {
+    width: 50px;
+    height: 50px;
+    background-color: #EBE3D5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 0px 1px 1px;
+}
+
+#browse:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.browse-wrapper {
+    margin-right: 16px;
+}
+
+#drop {
+    border: 2px dashed #222222;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 1;
+}
+
+.results {
+    padding-left: 32px;
+}
+
+.preview {
+    border: 1px solid #222222;
+    width: 800px;
+    height: 600px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.help-message {
+    font-size: 20px; 
+    font-family: 'Rubik Regular';
+}
+
+#drop.active {
+    border-color: #afccff;
+    background-color: #D3E3FD;
+    width: 250px;
+    height: 60px;
+    .help-message {
+        opacity: 0.5;
+    }
+}
+
+canvas {
+    display:block;
+    border: 1px solid black;
+    margin-top:10px;
+    width: 1024px;
+    height: 768px;
+}
+
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 64px;
+}
